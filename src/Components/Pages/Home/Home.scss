@@ -1,0 +1,99 @@
+.home {
+    padding-top: 85px;
+    padding-left: 255px;
+    position: relative;
+    z-index: 0;
+}
+.home-channel__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 180px;
+    .home-channel__link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        img {
+            margin-right: 20px;
+        }
+        span {
+            font-weight: bold;
+            font-size: 26px;
+            line-height: 33px;
+            color: #FFFFFF;
+        }
+    }
+    .home-channels__btn {
+        width: 28px;
+        height: 28px;
+        background-color: rgb(73, 73, 73);
+        border: none;
+        border-radius: 50%;
+        margin-right: 10px;
+        cursor: pointer;
+        &:active {
+            opacity: 0.6;
+        }
+    }
+    .home__recomended-lead {
+        font-size: 26px;
+        line-height: 33px;
+        color: #FFFFFF;
+
+    }
+    .recomended__channel-left {
+        display: flex;
+        align-items: center;
+        .recomended__channel-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            img {
+                margin-right: 20px;
+            }
+            span {
+                font-weight: bold;
+                font-size: 26px;
+                line-height: 33px;
+                color: #FFFFFF;
+
+            }
+        }
+        .recomended-text {
+            display: block;
+            margin-left: 20px;
+            font-size: 16px;
+            line-height: 20px;
+            color: #C2C2C2;
+        }
+    }
+    .subscribe-btn {
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 10px 20px;
+        background-color: #f00;
+        border: none;
+        border-radius: 20px;
+        margin-right: 40px;
+        cursor: pointer;
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+.recomended-channel-list {
+    overflow: hidden;
+    width: 90hw;
+    
+}
+.prev {
+    transition: all 0.5s;
+    transform: translateX(0px);
+}
+.next {
+    transition: all 0.5s;
+    transform: translateX(-80%);
+}

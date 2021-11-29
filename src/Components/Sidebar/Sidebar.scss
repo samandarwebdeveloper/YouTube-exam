@@ -1,0 +1,157 @@
+@import "../../Assets/styles/Color.scss";
+
+.sidebar {
+    width: 255px;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    padding: 85px 5px 0 30px;
+    background-color: $main-color;
+    z-index: 1;
+    .sidebar__main {
+        height: 98vh;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 10px;
+        &::-webkit-scrollbar {
+            width: 5px;
+            
+        }
+
+        &::-webkit-scrollbar-track {
+            background: $main-color;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: rgb(136, 136, 136);
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: rgb(255, 255, 255);
+        }
+    }
+
+    .sidebar__lists {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .sidebar-top__list {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+
+        .sidebar-top__item {
+            margin-bottom: 20px;
+            .navlink {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                span {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #999999;
+                }
+                svg {
+                    margin-right: 13px;
+                    path {
+                        fill: #999
+                    }
+                }
+            }
+            .navlink-active {
+                span {
+                    color: #FF0000;
+                }
+                svg {
+                    path {
+                        fill: #f00;
+                    }
+                }
+                
+            }
+            
+        }
+
+        
+    }
+
+    .sidebar-bottom__list {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 20px;
+
+        li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            span {
+                font-size: 16px;
+                line-height: 20px;
+                color: #999;
+                
+            }
+
+            svg {
+                margin-right: 13px;
+            }
+        }
+    }
+
+    .sidebar__channels-box {
+        h3 {
+            font-size: 18px;
+            line-height: 23px;
+            color: #FFFFFF;
+            margin-bottom: 30px;
+        }
+
+        .sidebar__channels-list {
+            list-style-type: none;
+            padding: 0;
+
+            .channels__link {
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                span {
+                    font-size: 16px;
+                    line-height: 20px;
+                    color: #999;
+                    
+                }
+
+                img {
+                    margin-right: 13px;
+                }
+            }
+        }
+    }
+
+    .settings__btn {
+        margin-top: auto;
+        background-color: transparent;
+        border: transparent;
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            opacity: 0.5;
+        }
+
+        svg {
+            display: block;
+            margin-right: 13px;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+
+@import "../../Assets/styles/Color.scss";
+
+.site-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 0 20px 20px;
+    position: fixed;
+    z-index: 2;
+    background-color: $main-color;
+    .header-logo {
+        display: flex;
+        align-items: center;
+        margin-right: 40px;
+        img {
+            margin-right: 28px;
+        }
+
+    }
+    .header-input {
+        width: 830px;
+        height: 44px;
+        background-color: #2C2C33;
+        border: transparent;
+        border-radius: 22px;
+        padding: 12px 23px;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        outline: none;
+        background-image: url('../../Assets/images/search.png');
+        background-repeat: no-repeat;
+        background-position: left 98% center ;
+        &:focus {
+            border: 1px solid #76767a;
+        }
+    }
+    .header__navigation {
+        margin-left: auto;
+        .header__navigation-list {
+            display: flex;
+            align-items: center;
+            list-style-type: none;
+            li {
+                margin-right: 50px;
+                button {
+                    background-color: transparent;
+                    border: transparent;
+                    cursor: pointer;
+                    position: relative;
+                    z-index: 1;
+                }
+                .notification__btn::before {
+                    content: "3";
+                    padding: 4px 8px;
+                    display: block;
+                    background-color: #f00;
+                    position: absolute;
+                    border-radius: 50%;
+                    font-weight: bold;
+                    color: #fff;
+                    z-index: 1;
+                    font-size: 16px;
+                    bottom: 60%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+}
